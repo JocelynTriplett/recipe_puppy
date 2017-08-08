@@ -3,7 +3,9 @@ console.log("talking");
     let submit = document.getElementById('submit');
     submit.addEventListener('click', search, false);
 
-    function search(){
+    function search() {
+      let search_terms = document.getElementById('search_terms').value;
+      console.log(search_terms);
       fetch('http://recipepuppyproxy.herokuapp.com/api/?i=onions,garlic&q=omelet&p=3')
       //www.recipepuppy.com/api/?q=search-term
 
