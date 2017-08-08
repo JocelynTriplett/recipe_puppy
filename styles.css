@@ -44,14 +44,24 @@ header h1 {
 }
 
 .flex-item {
-    background: gray;
+    background: white;
     margin: 5px;
-    color: white;
+    color: black;
     font-weight: bold;
     font-size: 1.5em;
     text-align: center;
     flex: 1 0 auto;
-    height: auto;
+    height: 100%;
+    padding: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+  width: 20vw;
+  height: 20vw;
 }
 
 input {
@@ -60,6 +70,8 @@ input {
   color: black;
   display: flex;
   width: 40%;
+  font-size: 1.5em;
+  padding-left: 10px;
 }
 
 #submit {
@@ -71,10 +83,4 @@ input {
 .blank {
   background: white;
   border: none;
-}
-
-.flex-item:before {
-    content:'';
-    float:left;
-    padding-top:100%;
 }
