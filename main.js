@@ -6,7 +6,8 @@ console.log("talking");
     function search() {
       let search_terms = document.getElementById('search_terms').value;
       console.log(search_terms);
-      fetch('http://recipepuppyproxy.herokuapp.com/api/?i=onions,garlic&q=omelet&p=3')
+
+      fetch('http://recipepuppyproxy.herokuapp.com/api/?q='+search_terms)
       //www.recipepuppy.com/api/?q=search-term
 
         .then(
