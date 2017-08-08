@@ -54,10 +54,18 @@ header h1 {
     height: auto;
 }
 
-.search_box {
+input {
   background: white;
   border: solid 2px black;
   color: black;
+  display: flex;
+  width: 40%;
+}
+
+#submit {
+  width: 15%;
+  justify-content: center;
+  text-transform: capitalize;
 }
 
 .blank {
